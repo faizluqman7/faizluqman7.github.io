@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Faiz Luqman - Personal Portfolio Home</title>
+    </head>
+
+    <body>
+        <section id="homepage">
+
+            <div class="topnav">
+              <a class="active" href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="projects.html">Past Projects</a>
+              <a href="contact.html">Contact</a>
+            </div>
+
+        <div class="homepage container">
+
+            <div>
+            <h2>Hi, I am </h2>
+            <h1>Faiz Luqman</h1>
+            </div>
+        </div>
+        </section>
+
+        <section id="scrolldown">
+            <div class="general">
+                <h2>scroll down...</h2>
+            </div>
+        </section>
+
+
+        <section id="Introduction">
+        <div class="general">
+            <div class="vstack gap-3 col md-5 mx-auto">
+      <h2>Introduction</h2>
+      <p>Welcome to my online personal portfolio! Here you can find most of the things I do including projects/ achievements and most other interesting stuff about me.
+          So, a little bit about myself. You can call me Faiz. I love programming and everything that has to do with technology honestly. It has been my passion since young and I am grateful to be studying it at university level which is what I will be pursuing soon. (Bachelor's Degree in Computer Science.) Some of my favourite areas in computer science are artificial intelligence and machine learning, which although is difficult, but it is indeed interesting. In the future, I aspire to become a software engineer, with an aim to innovate the world and make an impact in the society.</p>
+      </div>
+    </div>
+    </section>
+
+    <section id="contact">
+        <div class="container mx-auto">
+        <div class="vstack gap-3 col md-5 mx-auto">
+      <h2>Interested to know more?</h2>
+        <p>Use the buttons above this page to see individual sections.. <br>or contact me using this form!</p>
+
+
+      <form id="contactform" class="row g-3 col md-5 mx-auto">
+        <div class="col-md-6">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstname" required>
+        </div>
+        <div class="col-md-6">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastname">
+        </div>
+        <div class="col-md-12">
+            <label for="email" class="form-label" required>Email Address</label>
+            <input type="text" class="form-control" id="email" required>
+        </div>
+        <div class="col-md-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+      </div>
+      </div>
+    </section>
+
+
+    <script>
+        const contactform = document.getElementById("contactform");
+        contactform.addEventListener("submit", (e) =>{
+            e.preventDefault();
+            alert("Submitted! I will be contacting you shortly");
+            //this section tbd, supposed to be linked to php to post the form, but for this pset it is not required. will add php functionality in the future.
+        });
+    </script>
+    </body>
+</html>
