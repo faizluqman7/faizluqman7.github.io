@@ -213,3 +213,33 @@ img:hover{
     text-align: left;
   }
 }
+
+.link {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3); /* Frosted glass effect */
+}
+
+.link a {
+  display: inline-block;
+  color: #444; /* Text color */
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Trebuchet MS', sans-serif;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.link a:hover {
+  background-color: rgba(240, 248, 255, 0.5); /* Lighter background on hover */
+  color: #222; /* Darker text on hover */
+}
+
+.link a.active {
+  background-color: #4210b7;
+  color: #fff;
+}
