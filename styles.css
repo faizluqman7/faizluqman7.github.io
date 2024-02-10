@@ -214,33 +214,36 @@ img:hover{
   }
 }
 
-.link{
-	overflow:hidden;
+.link {
+	overflow: hidden;
 	text-align: center;
 	justify-content: center;
 	background-color: none;
-	border-radius:25px;
-	padding:10px;
+	border-radius: 25px;
+	padding: 10px;
 }
 
 .link a {
-  display: inline-block;
-  color: #FFFF; /* Text color */
-  text-align: center;
-  padding: 12px 20px;
-  text-decoration: none;
-  font-size: 18px;
-  font-family: 'Trebuchet MS', sans-serif;
-  border-radius: 10px;
-  transition: background-color 0.3s, color 0.3s;
+	display: inline-block;
+	color: #FFFF; /* Text color */
+	text-align: center;
+	padding: 12px 20px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'Trebuchet MS', sans-serif;
+	border-radius: 10px;
+	transition: background-color 0.3s, color 0.3s;
+	background-color: rgba(255, 255, 255, 0.3); /* Frosted glass effect */
+	backdrop-filter: blur(10px); /* Frosted glass effect */
 }
 
 .link a:hover {
-  background-color: rgba(240, 248, 255, 0.5); /* Lighter background on hover */
-  color: #222; /* Darker text on hover */
+	background-color: rgba(240, 248, 255, 0.5); /* Lighter background on hover */
+	color: #222; /* Darker text on hover */
 }
 
 .link a.active {
-  background-color: #4210b7;
-  color: #fff;
+	background-color: #4210b7;
+	color: #fff;
 }
+
