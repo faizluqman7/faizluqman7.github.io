@@ -214,17 +214,18 @@ img:hover{
   }
 }
 
-.link {
-  overflow: hidden;
-  text-align: center;
-  border-radius: 25px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.3); /* Frosted glass effect */
+.link{
+	overflow:hidden;
+	text-align: center;
+	justify-content: center;
+	background-color: none;
+	border-radius:25px;
+	padding:10px;
 }
 
 .link a {
   display: inline-block;
-  color: #444; /* Text color */
+  color: #FFFF; /* Text color */
   text-align: center;
   padding: 12px 20px;
   text-decoration: none;
