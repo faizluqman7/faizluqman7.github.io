@@ -1,249 +1,157 @@
-@keyframes transitionIn{
-	from{
-		opacity:0;
-		transform:rotateX(-10deg);
-
-	}
-
-	to{
-		opacity:1;
-		transform:rotateX(0);
-	}
+/* Keyframes for smooth, subtle transitions */
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-body{
-background-image: url(https://images.unsplash.com/photo-1618556450994-a6a128ef0d9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80);
-	background-size: cover;
-	background-position: top center;
-	position: relative;
-	margin: 0 auto;
-	background-attachment: fixed;
-	background-color:#442FD4
+/* Background styling for immersive effect */
+body {
+    background-image: url('https://images.unsplash.com/photo-1618556450994-a6a128ef0d9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #2E2A4D;
+    margin: 0;
+    padding: 0;
 }
 
-.container{
-	min-height: 60vh;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0;
-	z-index: -1;
+/* Container adjustments */
+.container, .homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
 }
 
-#homepage .homepage{
-	max-width: 1080px;
-	margin:  auto;
-	padding: 0;
-	justify-content: center;
-	z-index: -1;
+/* Section styling */
+.general, .widget {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin: 20px auto;
+    max-width: 600px;
 }
 
-.general{
-
-	left: 50%;
-	top: 50%;
-	border: 5px;
-	padding: 0px;
-	min-height: 500px;
-	z-index: -1;
+/* Typography */
+h1, h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #edece6;
+    margin: 0;
+    animation: transitionIn 1s ease;
 }
-
-h2{
-	font-family: 'Andale Mono', monospace;
-	color: white;
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    transition: transform 0.3s;
 	text-align: center;
-	margin: 0;
-	animation: transitionIn 1.5s;
+}
+h1:hover {
+    transform: scale(1.1);
 }
 
-h1{
-	font-family: 'Trebuchet MS', sans-serif;
-	color: white;
-	text-align: center;
-	font-size: 80px;
-	margin: 0;
-	animation: transitionIn 3.5s;
-	transition: transform 250ms;
+/* Links styling */
+a, .topnav a {
+    font-family: 'Andale Mono', monospace;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+a:hover {
+    color: #fcca03;
+    text-shadow: 0 0 10px #FFD700;
 }
 
-h1:hover{
-	transform: scale(1.15);
+/* Gradient button */
+.btn-grad {
+    background: linear-gradient(45deg, #4b6cb7, #182848, #4b6cb7);
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: transform 0.3s, background-position 1s;
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+}
+.btn-grad:hover {
+    transform: scale(1.1);
+    background-position: right center;
 }
 
-a{
-	padding-top: 50px;
-	font-family: 'Trebuchet MS', sans-serif;
-	text-align: center;
-	font-size: 20px;
-	border: 100px;
-	margin: 20px;
-  padding: 20px;
+/* Navbar styling */
+.topnav {
+    display: flex;
+    justify-content: center;
+    background: rgba(20, 20, 50, 0.7);
+    padding: 15px;
+    border-radius: 0px;
+    backdrop-filter: blur(5px);
+    animation: gradient 5s ease infinite;
 
-}
-
-p{
-	padding-top: 50px;
-	font-family: 'Trebuchet MS', sans-serif;
-	color: white;
-	text-align: center;
-	font-size: 20px;
-	border: 100px;
-	margin: 20px;
-  padding: 20px;
-}
-
-
-
-         .btn-grad {background-image: linear-gradient(to right, #4b6cb7 0%, #182848  51%, #4b6cb7  100%)}
-         .btn-grad {
-            margin: 50px;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;
-            box-shadow: 0 0 20px #eee;
-            border-radius: 10px;
-            display: block;
-          }
-
-          .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-          }
-
-
-
-
-.topnav{
-	overflow:hidden;
-	text-align: center;
-	justify-content: center;
-	/*background-color: rgba(255,255,255,.5);*/
-	border-radius:25px;
-  	padding:10px;
-}
-
-.topnav a {
-  display:inline-block;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: 'Trebuchet MS', sans-serif;
-  border-radius: 10px;
-}
-
-.topnav a:hover {
-  background-color: #F0F8FF;
-  color: #696969;
-  transition:ease-in 0.15s;
-  text-align:center;
-}
-
-.topnav a.active {
-  background-color: #6495ED;
-  color: #FFFFFF;
-  text-align:center;
-}
-
-.imgcenter{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50px;
-    animation: transitionIn 3.5s;
-	transition: transform 250ms;
-}
-
-img{
-	border-radius: 10px;
-}
-
-img:hover{
-    transform: scale(1.50);
-	transition: transform 250ms;
-}
-
-.widget {
-	animation: transitionIn 1.2s;
-	border-radius: 20px;
-  	/*background-image: linear-gradient( 109.6deg,  rgba(39,142,255,1) 11.2%, rgba(98,113,255,0.78) 100.2% );*/
-  	/*background-color: #8BC6EC;
-	background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);*/
-	background:rgba(255,255,255,.5);
-  /*border: 2px solid white;*/
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding: 20px;
-  color:black;
-  text-align: center;
-  font-family: 'Andale Mono', monospace;
-}
-
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
+	position: sticky;
     top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
+    z-index: 1000;
+}
+.topnav a {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #fff;
+    transition: background 0.5s;
+}
+.topnav a:hover {
+    background: #4b6cb7;
+}
+
+/* Contact form styling */
+#contactform input, #contactform textarea {
+    border: 2px solid #4b6cb7;
+    border-radius: 10px;
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+#contactform input:focus, #contactform textarea:focus {
+    border-color: #FFD700;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .topnav a {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+.imgcontainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imgcenter {
     display: block;
-    text-align: left;
-  }
+    margin: 0 auto;
 }
 
-.link {
-	overflow: hidden;
-	text-align: center;
-	justify-content: center;
-	background-color: none;
-	border-radius: 25px;
-	padding: 10px;
+.img-circular {
+    width: 200px; /* Set a fixed size for the image */
+    height: 200px; /* Set a fixed size for the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circular area without distortion */
+    border: 5px solid #007bff; /* Optional border */
 }
-
-.link a {
-	display: inline-block;
-	color: #FFFF; /* Text color */
-	text-align: center;
-	padding: 12px 20px;
-	text-decoration: none;
-	font-size: 18px;
-	font-family: 'Trebuchet MS', sans-serif;
-	border-radius: 10px;
-	transition: background-color 0.3s, color 0.3s;
-	background-color: rgba(255, 255, 255, 0.3); /* Frosted glass effect */
-	backdrop-filter: blur(10px); /* Frosted glass effect */
-}
-
-.link a:hover {
-	background-color: rgba(240, 248, 255, 0.5); /* Lighter background on hover */
-	color: #222; /* Darker text on hover */
-}
-
-.link a.active {
-	background-color: #4210b7;
-	color: #fff;
-}
-
