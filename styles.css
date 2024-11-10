@@ -24,6 +24,7 @@ body {
     background-color: #2E2A4D;
     margin: 0;
     padding: 0;
+	font-family: 'Andale Mono', monospace;
 }
 
 /* Container adjustments */
@@ -52,6 +53,7 @@ h1, h2 {
     color: #edece6;
     margin: 0;
     animation: transitionIn 1s ease;
+	font-family: 'Andale Mono', monospace;
 }
 h1 {
     font-size: 3.5rem;
