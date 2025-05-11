@@ -1,5 +1,5 @@
 const AboutSection = () => (
-    <section className="section d-flex flex-column justify-content-center align-items-center text-center" style={{height: "100vh"}}>
+    <section className="section d-flex flex-column justify-content-center align-items-center text-center py-5">
         <div className="w-75">
             <h3 className="mb-4">🛠️ Technologies & Frameworks</h3>
             <p className="mb-5">Here's a selection of some of the technologies and frameworks I frequently work with:</p>

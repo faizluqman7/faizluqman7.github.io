@@ -1,6 +1,6 @@
 
 const AboutSection = () => (
-    <section className="section d-flex flex-column justify-content-center align-items-center text-center" style={{ height: "100vh" }}>
+    <section className="section d-flex flex-column justify-content-center align-items-center text-center py-5">
         <div className="w-75">
             <h3 className="mb-4">👨‍💻 About Me</h3>
             <p className="lead mb-5">
@@ -53,8 +53,7 @@ const AboutSection = () => (
                     className="btn btn-outline-primary"
                     target="_blank"
                     rel="noopener noreferrer"
-                >
-                    📄 View My Resume
+                > <button>📄 View My Resume</button>
                 </a>
             </div>
         </div>
