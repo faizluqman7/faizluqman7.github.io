@@ -9,6 +9,8 @@ import TechSection from "./components/Tech.tsx";
 import ProjectsSection from "./components/ProjectsSection.tsx";
 import Contact from "./components/Contact.tsx";
 import FloatingBubbles from "./components/Bubbles.tsx";
+import NavBar from "./components/NavBar.tsx";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,6 +38,7 @@ function App() {
 
     return (
         <main className="fullpage-container">
+            <NavBar />
             <FloatingBubbles />
             <HeroSection />
             <AboutSection />

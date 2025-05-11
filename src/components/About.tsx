@@ -1,6 +1,6 @@
 
 const AboutSection = () => (
-    <section className="section d-flex flex-column justify-content-center align-items-center text-center py-5">
+    <section id="about-me" className="section d-flex flex-column justify-content-center align-items-center text-center py-5">
         <div className="w-75">
             <h3 className="mb-4">👨‍💻 About Me</h3>
             <p className="lead mb-5">

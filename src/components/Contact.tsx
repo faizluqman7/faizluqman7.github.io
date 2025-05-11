@@ -1,5 +1,5 @@
 const AboutSection = () => (
-    <section className="section d-flex flex-column justify-content-center align-items-center text-center py-5">
+    <section id="contact" className="section d-flex flex-column justify-content-center align-items-center text-center py-5">
         <div className="w-75">
             <h3 className="mb-3">Contact Me</h3>
             <p>If you're interested in collaborating, have questions, or just want to say hi – feel free to drop a message!</p>
