@@ -22,17 +22,27 @@ const ProjectCard = ({
             <div className="card-body text-start">
                 <h5 className="card-title fw-bold">
                     {project.link ? (
-                        <a
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-decoration-none"
-                            onClick={(e) => e.stopPropagation()}
+                        <h3
+                            onClick={onToggle}
+
                         >
-                            {project.title}
-                        </a>
+                            <h3>{project.title}</h3>
+                            <p>Click to expand</p>
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-outline-dark rounded-circle"
+                                style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                                title="GitHub"
+                            >
+                                <i className="bi bi-github"></i>
+                            </a>
+                        </h3>
                     ) : (
-                        project.title
+                        <h3>{project.title}
+                        <p>Click to expand</p>
+                        </h3>
                     )}
                 </h5>
 

@@ -42,7 +42,7 @@ const AboutSection = () => (
                     rel="noopener noreferrer"
                     className="btn btn-outline-dark rounded-circle"
                     style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                    title="GitHub"
+                    title="LinkedIn"
                 >
                     <i className="bi bi-linkedin"></i>
                 </a>
