@@ -88,7 +88,7 @@ function App() {
                 <div className="w-75">
                 <h3 className="mb-3">About Me</h3>
                     <p>
-                        👨‍💻 I am a current penultimate year computer science student at the University of Edinburgh, UK! 🏴󠁧󠁢󠁳󠁣󠁴󠁿🇬🇧 <br /><br />
+                        👨‍💻 I am a current computer science student at the University of Edinburgh, UK! 🏴󠁧󠁢󠁳󠁣󠁴󠁿🇬🇧 <br /><br />
                         ❤️ Currently most interested in software development and artificial intelligence / machine learning ! 🧠<br /><br />
                         💡 Looking forward to advancing my career in the technology industry, with a goal of becoming a responsible and innovative full-stack software engineer in the near future to contribute to society 🚀
                     </p>
