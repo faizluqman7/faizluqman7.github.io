@@ -70,7 +70,7 @@ function App() {
         {
             title: 'Hackathon Website',
             description: [
-                'Developed a website to promote sustainable cities, including features such as an energy consumption calculator.',
+                'Developed a website to promote sustainable cities, with features such as an energy consumption calculator.',
             ],
             link: 'https://github.com/faizluqman7/imaginehack2021',
         }
