@@ -8,7 +8,7 @@ const AboutSection = () => (
             </p>
 
             <div className="imgcontainer">
-                <img src="../../public/face.jpeg" width="200" height="200" className="imgcenter img-circular"/>
+                <img src="/face.jpeg" width="200" height="200" className="imgcenter img-circular"/>
             </div>
 
             <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -49,7 +49,7 @@ const AboutSection = () => (
             </div>
             <div className="mt-3 scroll-down-arrow">
                 <a
-                    href="../../public/2025%20RESUME%20WAN%20FAIZ%20LUQMAN.pdf"
+                    href="/2025%20RESUME%20WAN%20FAIZ%20LUQMAN.pdf"
                     className="btn btn-outline-primary"
                     target="_blank"
                     rel="noopener noreferrer"
