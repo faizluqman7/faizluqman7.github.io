@@ -8,6 +8,7 @@ import AboutSection from "./components/About.tsx";
 import TechSection from "./components/Tech.tsx";
 import ProjectsSection from "./components/ProjectsSection.tsx";
 import Contact from "./components/Contact.tsx";
+import FloatingBubbles from "./components/Bubbles.tsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,6 +36,7 @@ function App() {
 
     return (
         <main className="fullpage-container">
+            <FloatingBubbles />
             <HeroSection />
             <AboutSection />
             <TechSection />

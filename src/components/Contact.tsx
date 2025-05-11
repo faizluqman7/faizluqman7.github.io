@@ -24,6 +24,38 @@ const AboutSection = () => (
                     <button type="submit" className="btn btn-primary">Send</button>
                 </div>
             </form>
+            <div className="mt-4 d-flex justify-content-center gap-3">
+                <a
+                    href="https://github.com/faizluqman7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-dark rounded-circle"
+                    style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                    title="GitHub"
+                >
+                    <i className="bi bi-github"></i>
+                </a>
+
+                <a
+                    href="https://linkedin.com/in/faizluqman"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline-dark rounded-circle"
+                    style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                    title="GitHub"
+                >
+                    <i className="bi bi-linkedin"></i>
+                </a>
+
+                <a
+                    href="mailto:faizluqman7@gmail.com"
+                    className="btn btn-outline-primary rounded-circle"
+                    style={{ width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                    title="Email"
+                >
+                    <i className="bi bi-envelope-fill"></i>
+                </a>
+            </div>
         </div>
     </section>
 )
